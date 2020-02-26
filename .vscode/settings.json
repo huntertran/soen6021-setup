@@ -4,6 +4,7 @@
         "kieker",
         "rabbitmq",
         "teastore",
+        "ticketinfo",
         "webui"
     ]
 }
