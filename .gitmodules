@@ -1,3 +1,7 @@
 [submodule "train-ticket"]
     path = "train-ticket"
     url = https://github.com/FudanSELab/train-ticket.git
+[submodule "TeaStore"]
+	path = TeaStore
+	url = https://github.com/DescartesResearch/TeaStore.git
+	branch = master
