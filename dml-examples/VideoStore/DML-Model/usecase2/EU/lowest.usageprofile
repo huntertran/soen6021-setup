@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ASCII"?>
+<usageprofile:UsageProfile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:functions="http://www.descartes.tools/metamodel/functions/1.0" xmlns:usageprofile="http://www.descartes.tools/metamodel/usageprofile/1.0" id="_yiEmIEeqEeSW4Op0B0CyhQ" name="usgProfile">
+  <imports importURI="videostore.system"/>
+  <imports importURI="videostore.repository"/>
+  <system href="videostore.system#_zdRVAEeoEeSW4Op0B0CyhQ"/>
+  <usageScenarios id="_yiFNMEeqEeSW4Op0B0CyhQ" name="do">
+    <scenarioBehavior>
+      <actions xsi:type="usageprofile:SystemCallUserAction" id="_A_DeMEmxEeOPLK3yYyEQWQ" name="SysCall_boof">
+        <providingRole href="videostore.system#_zdRVAUeoEeSW4Op0B0CyhQ"/>
+        <signature href="videostore.repository#_aeA_cEh-EeOdTtmYhYAY2w"/>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.15"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.0"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.075"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.1"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.025"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.2"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.126"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.3"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.063"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.4"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.021"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.5"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.09"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.6"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.045"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.7"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.015"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.8"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.084"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.9"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.042"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.10"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.014"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.11"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.066"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.12"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.033"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.13"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.011"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.14"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.054"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.15"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.027"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.16"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.009"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.17"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.03"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.18"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.015"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.19"/>
+        </inputParameterSettings>
+        <inputParameterSettings>
+          <value>
+            <probFunction xsi:type="functions:DoubleLiteral" value="0.005"/>
+          </value>
+          <parameter href="videostore.repository#//@interfaces.0/@signatures.0/@parameters.20"/>
+        </inputParameterSettings>
+      </actions>
+    </scenarioBehavior>
+    <workloadType xsi:type="usageprofile:OpenWorkloadType">
+      <interArrivalTime>
+        <probFunction xsi:type="functions:ExponentialDistribution" rate="0.005"/>
+      </interArrivalTime>
+    </workloadType>
+  </usageScenarios>
+</usageprofile:UsageProfile>

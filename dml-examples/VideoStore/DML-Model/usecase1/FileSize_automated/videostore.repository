@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:functions="http://www.descartes.tools/metamodel/functions/1.0" xmlns:repository="http://www.descartes.tools/metamodel/repository/1.0" xmlns:resourcetype="http://www.descartes.tools/metamodel/resourcetype/1.0" xmlns:servicebehavior="http://www.descartes.tools/metamodel/servicebehavior/1.0" id="_O2wgMEcEEeOgk9V4uRCQAw" name="repositoryName">
+  <imports importURI="min.resourcetype"/>
+  <interfaces id="_Tq2AUUhvEeOHzfCev3b1wQ" name="Transcription">
+    <signatures id="_aeA_cEh-EeOdTtmYhYAY2w" name="transcribe">
+      <parameters xsi:type="repository:InputParameter" name="FileSize">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+    </signatures>
+  </interfaces>
+  <interfaces id="_3yUWA4BTEeeB54TBT5-nRQ" name="Translation">
+    <signatures id="__6600IBTEeeB54TBT5-nRQ" name="translate">
+      <parameters xsi:type="repository:InputParameter" name="NumberOfLines">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+    </signatures>
+  </interfaces>
+  <components xsi:type="repository:BasicComponent" id="_ePxeNEicEeOUHduTkzq26A" name="Transcription">
+    <interfaceProvidingRoles id="_fMTX4EicEeOUHduTkzq26A" name="Transcription" interface="_Tq2AUUhvEeOHzfCev3b1wQ"/>
+    <interfaceRequiringRoles id="_LmuUoYBUEeeB54TBT5-nRQ" name="Translation" interface="_3yUWA4BTEeeB54TBT5-nRQ"/>
+    <fineGrainedBehavior describedSignature="_aeA_cEh-EeOdTtmYhYAY2w" interfaceProvidingRole="_fMTX4EicEeOUHduTkzq26A">
+      <behavior>
+        <actions xsi:type="servicebehavior:InternalAction">
+          <resourceDemand id="_a-wSROnUEeWJbNBbEh2EOw" characterization="EXPLICIT">
+            <explicitDescription>
+              <probFunction xsi:type="functions:ReplayFile" Filepath="C:\Users\Simon\tools-descartes-dml-dev-environment-tailoredmodelcomposition\git\dml-examples\dml-examples\VideoStore\DML-Model\usecase1\FileSize_automated\estimated_resourcedemands.csv"/>
+            </explicitDescription>
+            <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+          </resourceDemand>
+        </actions>
+        <actions xsi:type="servicebehavior:ExternalCallAction">
+          <externalCall id="_USys4IBUEeeB54TBT5-nRQ" name="getSubtitle" signature="__6600IBTEeeB54TBT5-nRQ" interfaceRequiringRole="_LmuUoYBUEeeB54TBT5-nRQ"/>
+        </actions>
+      </behavior>
+    </fineGrainedBehavior>
+  </components>
+  <components xsi:type="repository:BasicComponent" id="_Cxy7VIBUEeeB54TBT5-nRQ" name="Translation">
+    <interfaceProvidingRoles id="_GdUK0IBUEeeB54TBT5-nRQ" name="Translation" interface="_3yUWA4BTEeeB54TBT5-nRQ"/>
+    <fineGrainedBehavior describedSignature="__6600IBTEeeB54TBT5-nRQ" interfaceProvidingRole="_GdUK0IBUEeeB54TBT5-nRQ">
+      <behavior>
+        <actions xsi:type="servicebehavior:InternalAction">
+          <resourceDemand id="1231512" characterization="EXPLICIT">
+            <explicitDescription>
+              <probFunction xsi:type="functions:DoubleLiteral" value="1E-17"/>
+            </explicitDescription>
+            <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+          </resourceDemand>
+        </actions>
+      </behavior>
+    </fineGrainedBehavior>
+  </components>
+</repository:Repository>

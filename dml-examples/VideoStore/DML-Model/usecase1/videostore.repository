@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:functions="http://www.descartes.tools/metamodel/functions/1.0" xmlns:parameterdependencies="http://www.descartes.tools/metamodel/parameterdependencies/1.0" xmlns:repository="http://www.descartes.tools/metamodel/repository/1.0" xmlns:resourcetype="http://www.descartes.tools/metamodel/resourcetype/1.0" xmlns:servicebehavior="http://www.descartes.tools/metamodel/servicebehavior/1.0" id="_O2wgMEcEEeOgk9V4uRCQAw" name="repositoryName">
+  <imports importURI="min.resourcetype"/>
+  <interfaces id="_Tq2AUUhvEeOHzfCev3b1wQ" name="Transcription">
+    <signatures id="_aeA_cEh-EeOdTtmYhYAY2w" name="transcribe">
+      <parameters xsi:type="repository:InputParameter" name="FileSize">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+    </signatures>
+  </interfaces>
+  <interfaces id="_3yUWA4BTEeeB54TBT5-nRQ" name="Translation">
+    <signatures id="__6600IBTEeeB54TBT5-nRQ" name="translate">
+      <parameters xsi:type="repository:InputParameter" name="NumberOfLines">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+    </signatures>
+  </interfaces>
+  <components xsi:type="repository:BasicComponent" id="_ePxeNEicEeOUHduTkzq26A" name="Transcription">
+    <interfaceProvidingRoles id="_fMTX4EicEeOUHduTkzq26A" name="Transcription" interface="_Tq2AUUhvEeOHzfCev3b1wQ"/>
+    <interfaceRequiringRoles id="_LmuUoYBUEeeB54TBT5-nRQ" name="Translation" interface="_3yUWA4BTEeeB54TBT5-nRQ"/>
+    <relationships xsi:type="parameterdependencies:DependencyRelationship" characterization="EXPLICIT" dependent="_a-wSROnUEeWJbNBbEh2EOw" independent="21">
+      <explicitDescription>
+        <expression xsi:type="functions:Term" operation="SUB">
+          <left xsi:type="functions:Product">
+            <left xsi:type="functions:IntLiteral" value="43"/>
+            <right xsi:type="functions:InfluencingParameterValue" relationshipVariable="21"/>
+          </left>
+          <right xsi:type="functions:IntLiteral" value="1662"/>
+        </expression>
+      </explicitDescription>
+    </relationships>
+    <fineGrainedBehavior describedSignature="_aeA_cEh-EeOdTtmYhYAY2w" interfaceProvidingRole="_fMTX4EicEeOUHduTkzq26A">
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="21" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.0">
+        <explicitDescription>
+          <probFunction xsi:type="functions:ProbabilityMassFunction">
+            <samples xsi:type="functions:DoubleSampleList">
+              <items probability="0.04" value="313"/>
+              <items probability="0.04" value="344"/>
+              <items probability="0.08" value="376"/>
+              <items probability="0.04" value="407"/>
+              <items probability="0.04" value="438"/>
+              <items probability="0.04" value="469"/>
+              <items probability="0.04" value="501"/>
+              <items probability="0.04" value="532"/>
+              <items probability="0.04" value="563"/>
+              <items probability="0.04" value="594"/>
+              <items probability="0.08" value="626"/>
+              <items probability="0.08" value="657"/>
+              <items probability="0.04" value="688"/>
+              <items probability="0.04" value="751"/>
+              <items probability="0.04" value="782"/>
+              <items probability="0.04" value="813"/>
+              <items probability="0.08" value="844"/>
+              <items probability="0.08" value="876"/>
+              <items probability="0.04" value="907"/>
+              <items probability="0.04" value="938"/>
+            </samples>
+          </probFunction>
+        </explicitDescription>
+      </callParameter>
+      <behavior>
+        <actions xsi:type="servicebehavior:InternalAction">
+          <resourceDemand id="_a-wSROnUEeWJbNBbEh2EOw" characterization="EXPLICIT">
+            <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+          </resourceDemand>
+        </actions>
+        <actions xsi:type="servicebehavior:ExternalCallAction">
+          <externalCall id="_USys4IBUEeeB54TBT5-nRQ" name="getSubtitle" signature="__6600IBTEeeB54TBT5-nRQ" interfaceRequiringRole="_LmuUoYBUEeeB54TBT5-nRQ"/>
+        </actions>
+      </behavior>
+    </fineGrainedBehavior>
+  </components>
+  <components xsi:type="repository:BasicComponent" id="_Cxy7VIBUEeeB54TBT5-nRQ" name="Translation">
+    <interfaceProvidingRoles id="_GdUK0IBUEeeB54TBT5-nRQ" name="Translation" interface="_3yUWA4BTEeeB54TBT5-nRQ"/>
+    <fineGrainedBehavior describedSignature="__6600IBTEeeB54TBT5-nRQ" interfaceProvidingRole="_GdUK0IBUEeeB54TBT5-nRQ">
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="42351236512643" characterization="EXPLICIT" providingRole="_GdUK0IBUEeeB54TBT5-nRQ" parameter="//@interfaces.1/@signatures.0/@parameters.0">
+        <explicitDescription>
+          <probFunction xsi:type="functions:ProbabilityMassFunction">
+            <samples xsi:type="functions:IntSampleList">
+              <items probability="0.04" value="3"/>
+              <items probability="0.08" value="5"/>
+              <items probability="0.08" value="6"/>
+              <items probability="0.04" value="7"/>
+              <items probability="0.16" value="8"/>
+              <items probability="0.04" value="9"/>
+              <items probability="0.20" value="10"/>
+              <items probability="0.08" value="11"/>
+              <items probability="0.16" value="13"/>
+              <items probability="0.04" value="14"/>
+              <items probability="0.04" value="15"/>
+              <items probability="0.04" value="17"/>
+            </samples>
+          </probFunction>
+        </explicitDescription>
+      </callParameter>
+      <behavior>
+        <actions xsi:type="servicebehavior:InternalAction">
+          <resourceDemand id="1231512" characterization="EXPLICIT">
+            <explicitDescription>
+              <probFunction xsi:type="functions:DoubleLiteral" value="1E-17"/>
+            </explicitDescription>
+            <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+          </resourceDemand>
+        </actions>
+      </behavior>
+    </fineGrainedBehavior>
+  </components>
+</repository:Repository>

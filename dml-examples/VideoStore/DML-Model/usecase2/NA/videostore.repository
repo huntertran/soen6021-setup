@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:functions="http://www.descartes.tools/metamodel/functions/1.0" xmlns:parameterdependencies="http://www.descartes.tools/metamodel/parameterdependencies/1.0" xmlns:repository="http://www.descartes.tools/metamodel/repository/1.0" xmlns:resourcetype="http://www.descartes.tools/metamodel/resourcetype/1.0" xmlns:servicebehavior="http://www.descartes.tools/metamodel/servicebehavior/1.0" id="_O2wgMEcEEeOgk9V4uRCQAw" name="repositoryName">
+  <imports importURI="min.resourcetype"/>
+  <interfaces id="_Tq2AUUhvEeOHzfCev3b1wQ" name="VideoStore">
+    <signatures id="_aeA_cEh-EeOdTtmYhYAY2w" name="getVideo">
+      <parameters xsi:type="repository:InputParameter" name="pEB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pEM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pER">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pGB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pGM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pGR">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pFB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pFM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pFR">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pIB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pIM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pIR">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pSB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pSM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pSR">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pPB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pPM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pPR">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pRB">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pRM">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+      <parameters xsi:type="repository:InputParameter" name="pRR">
+        <dataType xsi:type="repository:PrimitiveDataType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/primitivetypes.repository#_rulXgjaOEeK3VJC2wj7WsA"/>
+      </parameters>
+    </signatures>
+  </interfaces>
+  <interfaces id="_3yUWA4BTEeeB54TBT5-nRQ" name="SubtitleProvider">
+    <signatures id="__6600IBTEeeB54TBT5-nRQ" name="getSubtitle"/>
+  </interfaces>
+  <components xsi:type="repository:BasicComponent" id="_ePxeNEicEeOUHduTkzq26A" name="VideoStore">
+    <interfaceProvidingRoles id="_fMTX4EicEeOUHduTkzq26A" name="VideoStore" interface="_Tq2AUUhvEeOHzfCev3b1wQ"/>
+    <interfaceRequiringRoles id="_LmuUoYBUEeeB54TBT5-nRQ" name="SubtitleProvider" interface="_3yUWA4BTEeeB54TBT5-nRQ"/>
+    <fineGrainedBehavior describedSignature="_aeA_cEh-EeOdTtmYhYAY2w" interfaceProvidingRole="_fMTX4EicEeOUHduTkzq26A">
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="1" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.0"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="2" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.1"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="3" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.2"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="4" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.3"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="5" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.4"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="6" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.5"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="7" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.6"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="8" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.7"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="9" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.8"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="10" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.9"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="11" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.10"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="12" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.11"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="13" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.12"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="14" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.13"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="15" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.14"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="16" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.15"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="17" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.16"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="18" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.17"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="19" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.18"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="20" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.19"/>
+      <callParameter xsi:type="parameterdependencies:ServiceInputParameter" id="21" characterization="EXPLICIT" providingRole="_fMTX4EicEeOUHduTkzq26A" parameter="//@interfaces.0/@signatures.0/@parameters.20"/>
+      <behavior>
+        <actions xsi:type="servicebehavior:ExternalCallAction">
+          <externalCall id="_USys4IBUEeeB54TBT5-nRQ" name="getSubtitle" signature="__6600IBTEeeB54TBT5-nRQ" interfaceRequiringRole="_LmuUoYBUEeeB54TBT5-nRQ"/>
+        </actions>
+        <actions xsi:type="servicebehavior:InternalAction">
+          <resourceDemand id="_a-wSROnUEeWJbNBbEh2EOw" characterization="EXPLICIT">
+            <explicitDescription>
+              <probFunction xsi:type="functions:DoubleLiteral" value="0.5"/>
+            </explicitDescription>
+            <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+          </resourceDemand>
+        </actions>
+      </behavior>
+    </fineGrainedBehavior>
+  </components>
+  <components xsi:type="repository:BasicComponent" id="_Cxy7VIBUEeeB54TBT5-nRQ" name="SubtitleProvider">
+    <interfaceProvidingRoles id="_GdUK0IBUEeeB54TBT5-nRQ" name="SubtitleProvider" interface="_3yUWA4BTEeeB54TBT5-nRQ"/>
+    <fineGrainedBehavior describedSignature="__6600IBTEeeB54TBT5-nRQ" interfaceProvidingRole="_GdUK0IBUEeeB54TBT5-nRQ">
+      <behavior>
+        <actions xsi:type="servicebehavior:BranchAction">
+          <branches>
+            <actions xsi:type="servicebehavior:InternalAction">
+              <resourceDemand id="_4KwOsIBUEeeB54TBT5-nRQ" characterization="EXPLICIT">
+                <explicitDescription>
+                  <probFunction xsi:type="functions:DoubleLiteral" value="0.000352579"/>
+                </explicitDescription>
+                <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+              </resourceDemand>
+            </actions>
+          </branches>
+          <branches>
+            <actions xsi:type="servicebehavior:InternalAction">
+              <resourceDemand id="_E0rjoIBVEeeB54TBT5-nRQ" characterization="EXPLICIT">
+                <explicitDescription>
+                  <probFunction xsi:type="functions:DoubleLiteral" value="21.05"/>
+                </explicitDescription>
+                <resourceType xsi:type="resourcetype:ProcessingResourceType" href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+              </resourceDemand>
+            </actions>
+          </branches>
+          <branchProbabilities id="_pIESoIBUEeeB54TBT5-nRQ" characterization="EXPLICIT"/>
+        </actions>
+      </behavior>
+    </fineGrainedBehavior>
+  </components>
+</repository:Repository>

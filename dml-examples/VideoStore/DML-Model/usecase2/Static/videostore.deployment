@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:deployment="http://www.descartes.tools/metamodel/deployment/1.0" xmlns:resourcelandscape="http://www.descartes.tools/metamodel/resourcelandscape/0.1" id="_04BXQOa4EeGWevb6qKkohg" name="depl">
+  <system href="videostore.system#_zdRVAEeoEeSW4Op0B0CyhQ"/>
+  <targetResourceLandscape href="videostore.resourcelandscape#_FE29UEnuEeOWVc_o6w1CBw"/>
+  <deploymentContexts id="_XCpjIEnvEeOWVc_o6w1CBw" name="VideoStore">
+    <assemblyContext href="videostore.system#_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <resourceContainer xsi:type="resourcelandscape:ComputeNode" href="videostore.resourcelandscape#_EuLk4ObvEeWHMYaSILpfIw"/>
+  </deploymentContexts>
+  <deploymentContexts id="_X4NlUIBdEeeCAMrBzrrAJw" name="SubtitleProvider">
+    <assemblyContext href="videostore.system#_o4xc8IBVEeeB54TBT5-nRQ"/>
+    <resourceContainer xsi:type="resourcelandscape:ComputeNode" href="videostore.resourcelandscape#_EuLk4ObvEeWHMYaSILpfIw"/>
+  </deploymentContexts>
+</deployment:Deployment>

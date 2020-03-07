@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:functions="http://www.descartes.tools/metamodel/functions/1.0" xmlns:parameterdependencies="http://www.descartes.tools/metamodel/parameterdependencies/1.0" xmlns:repository="http://www.descartes.tools/metamodel/repository/1.0" xmlns:system="http://www.descartes.tools/metamodel/system/1.0" id="_zdRVAEeoEeSW4Op0B0CyhQ" name="MySys">
+  <assemblyContexts id="_5QiUIEeoEeSW4Op0B0CyhQ" name="VideoStore">
+    <encapsulatedComponent xsi:type="repository:BasicComponent" href="videostore.repository#_ePxeNEicEeOUHduTkzq26A"/>
+  </assemblyContexts>
+  <assemblyContexts id="_o4xc8IBVEeeB54TBT5-nRQ" name="SubtitleProvider">
+    <encapsulatedComponent xsi:type="repository:BasicComponent" href="videostore.repository#_Cxy7VIBUEeeB54TBT5-nRQ"/>
+  </assemblyContexts>
+  <assemblyConnectors id="_tQ4ssYBVEeeB54TBT5-nRQ" name="Store --> Provider" providingAssemblyContext="_o4xc8IBVEeeB54TBT5-nRQ" requiringAssemblyContext="_5QiUIEeoEeSW4Op0B0CyhQ">
+    <interfaceRequiringRole href="videostore.repository#_LmuUoYBUEeeB54TBT5-nRQ"/>
+    <interfaceProvidingRole href="videostore.repository#_GdUK0IBUEeeB54TBT5-nRQ"/>
+  </assemblyConnectors>
+  <providingDelegationConnectors id="_6lWyAEeoEeSW4Op0B0CyhQ" name="PDCn_provRole_ProvRole_IA" assemblyContext="_5QiUIEeoEeSW4Op0B0CyhQ" outerInterfaceProvidingRole="_zdRVAUeoEeSW4Op0B0CyhQ">
+    <innerInterfaceProvidingRole href="videostore.repository#_fMTX4EicEeOUHduTkzq26A"/>
+  </providingDelegationConnectors>
+  <interfaceProvidingRoles id="_zdRVAUeoEeSW4Op0B0CyhQ" name="ProvRole_IA">
+    <interface href="videostore.repository#_Tq2AUUhvEeOHzfCev3b1wQ"/>
+  </interfaceProvidingRoles>
+  <relationships xsi:type="parameterdependencies:DependencyPropagationRelationship" characterization="EXPLICIT">
+    <explicitDescription>
+      <expression xsi:type="functions:Term">
+        <left xsi:type="functions:Product" operation="DIV">
+          <left xsi:type="functions:Product">
+            <left xsi:type="functions:Power">
+              <base xsi:type="functions:InfluencingParameterValue">
+                <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.0"/>
+              </base>
+              <exponent xsi:type="functions:IntLiteral" value="2"/>
+            </left>
+            <right xsi:type="functions:IntLiteral" value="250"/>
+          </left>
+          <right xsi:type="functions:IntLiteral" value="200"/>
+        </left>
+        <right xsi:type="functions:Term">
+          <left xsi:type="functions:Product" operation="DIV">
+            <left xsi:type="functions:Product">
+              <left xsi:type="functions:Power">
+                <base xsi:type="functions:InfluencingParameterValue">
+                  <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.1"/>
+                </base>
+                <exponent xsi:type="functions:IntLiteral" value="2"/>
+              </left>
+              <right xsi:type="functions:IntLiteral" value="250"/>
+            </left>
+            <right xsi:type="functions:IntLiteral" value="800"/>
+          </left>
+          <right xsi:type="functions:Term">
+            <left xsi:type="functions:Product" operation="DIV">
+              <left xsi:type="functions:Product">
+                <left xsi:type="functions:Power">
+                  <base xsi:type="functions:InfluencingParameterValue">
+                    <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.2"/>
+                  </base>
+                  <exponent xsi:type="functions:IntLiteral" value="2"/>
+                </left>
+                <right xsi:type="functions:IntLiteral" value="250"/>
+              </left>
+              <right xsi:type="functions:IntLiteral" value="9000"/>
+            </left>
+            <right xsi:type="functions:Term">
+              <left xsi:type="functions:Product" operation="DIV">
+                <left xsi:type="functions:Product">
+                  <left xsi:type="functions:Power">
+                    <base xsi:type="functions:InfluencingParameterValue">
+                      <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.3"/>
+                    </base>
+                    <exponent xsi:type="functions:IntLiteral" value="2"/>
+                  </left>
+                  <right xsi:type="functions:IntLiteral" value="250"/>
+                </left>
+                <right xsi:type="functions:IntLiteral" value="200"/>
+              </left>
+              <right xsi:type="functions:Term">
+                <left xsi:type="functions:Product" operation="DIV">
+                  <left xsi:type="functions:Product">
+                    <left xsi:type="functions:Power">
+                      <base xsi:type="functions:InfluencingParameterValue">
+                        <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.4"/>
+                      </base>
+                      <exponent xsi:type="functions:IntLiteral" value="2"/>
+                    </left>
+                    <right xsi:type="functions:IntLiteral" value="250"/>
+                  </left>
+                  <right xsi:type="functions:IntLiteral" value="800"/>
+                </left>
+                <right xsi:type="functions:Term">
+                  <left xsi:type="functions:Product" operation="DIV">
+                    <left xsi:type="functions:Product">
+                      <left xsi:type="functions:Power">
+                        <base xsi:type="functions:InfluencingParameterValue">
+                          <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.5"/>
+                        </base>
+                        <exponent xsi:type="functions:IntLiteral" value="2"/>
+                      </left>
+                      <right xsi:type="functions:IntLiteral" value="250"/>
+                    </left>
+                    <right xsi:type="functions:IntLiteral" value="9000"/>
+                  </left>
+                  <right xsi:type="functions:Term">
+                    <left xsi:type="functions:Product" operation="DIV">
+                      <left xsi:type="functions:Product">
+                        <left xsi:type="functions:Power">
+                          <base xsi:type="functions:InfluencingParameterValue">
+                            <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.6"/>
+                          </base>
+                          <exponent xsi:type="functions:IntLiteral" value="2"/>
+                        </left>
+                        <right xsi:type="functions:IntLiteral" value="250"/>
+                      </left>
+                      <right xsi:type="functions:IntLiteral" value="200"/>
+                    </left>
+                    <right xsi:type="functions:Term">
+                      <left xsi:type="functions:Product" operation="DIV">
+                        <left xsi:type="functions:Product">
+                          <left xsi:type="functions:Power">
+                            <base xsi:type="functions:InfluencingParameterValue">
+                              <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.7"/>
+                            </base>
+                            <exponent xsi:type="functions:IntLiteral" value="2"/>
+                          </left>
+                          <right xsi:type="functions:IntLiteral" value="250"/>
+                        </left>
+                        <right xsi:type="functions:IntLiteral" value="800"/>
+                      </left>
+                      <right xsi:type="functions:Term">
+                        <left xsi:type="functions:Product" operation="DIV">
+                          <left xsi:type="functions:Product">
+                            <left xsi:type="functions:Power">
+                              <base xsi:type="functions:InfluencingParameterValue">
+                                <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.8"/>
+                              </base>
+                              <exponent xsi:type="functions:IntLiteral" value="2"/>
+                            </left>
+                            <right xsi:type="functions:IntLiteral" value="250"/>
+                          </left>
+                          <right xsi:type="functions:IntLiteral" value="9000"/>
+                        </left>
+                        <right xsi:type="functions:Term">
+                          <left xsi:type="functions:Product" operation="DIV">
+                            <left xsi:type="functions:Product">
+                              <left xsi:type="functions:Power">
+                                <base xsi:type="functions:InfluencingParameterValue">
+                                  <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.9"/>
+                                </base>
+                                <exponent xsi:type="functions:IntLiteral" value="2"/>
+                              </left>
+                              <right xsi:type="functions:IntLiteral" value="250"/>
+                            </left>
+                            <right xsi:type="functions:IntLiteral" value="200"/>
+                          </left>
+                          <right xsi:type="functions:Term">
+                            <left xsi:type="functions:Product" operation="DIV">
+                              <left xsi:type="functions:Product">
+                                <left xsi:type="functions:Power">
+                                  <base xsi:type="functions:InfluencingParameterValue">
+                                    <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.10"/>
+                                  </base>
+                                  <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                </left>
+                                <right xsi:type="functions:IntLiteral" value="250"/>
+                              </left>
+                              <right xsi:type="functions:IntLiteral" value="800"/>
+                            </left>
+                            <right xsi:type="functions:Term">
+                              <left xsi:type="functions:Product" operation="DIV">
+                                <left xsi:type="functions:Product">
+                                  <left xsi:type="functions:Power">
+                                    <base xsi:type="functions:InfluencingParameterValue">
+                                      <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.11"/>
+                                    </base>
+                                    <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                  </left>
+                                  <right xsi:type="functions:IntLiteral" value="250"/>
+                                </left>
+                                <right xsi:type="functions:IntLiteral" value="9000"/>
+                              </left>
+                              <right xsi:type="functions:Term">
+                                <left xsi:type="functions:Product" operation="DIV">
+                                  <left xsi:type="functions:Product">
+                                    <left xsi:type="functions:Power">
+                                      <base xsi:type="functions:InfluencingParameterValue">
+                                        <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.12"/>
+                                      </base>
+                                      <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                    </left>
+                                    <right xsi:type="functions:IntLiteral" value="250"/>
+                                  </left>
+                                  <right xsi:type="functions:IntLiteral" value="200"/>
+                                </left>
+                                <right xsi:type="functions:Term">
+                                  <left xsi:type="functions:Product" operation="DIV">
+                                    <left xsi:type="functions:Product">
+                                      <left xsi:type="functions:Power">
+                                        <base xsi:type="functions:InfluencingParameterValue">
+                                          <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.13"/>
+                                        </base>
+                                        <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                      </left>
+                                      <right xsi:type="functions:IntLiteral" value="250"/>
+                                    </left>
+                                    <right xsi:type="functions:IntLiteral" value="800"/>
+                                  </left>
+                                  <right xsi:type="functions:Term">
+                                    <left xsi:type="functions:Product" operation="DIV">
+                                      <left xsi:type="functions:Product">
+                                        <left xsi:type="functions:Power">
+                                          <base xsi:type="functions:InfluencingParameterValue">
+                                            <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.14"/>
+                                          </base>
+                                          <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                        </left>
+                                        <right xsi:type="functions:IntLiteral" value="250"/>
+                                      </left>
+                                      <right xsi:type="functions:IntLiteral" value="9000"/>
+                                    </left>
+                                    <right xsi:type="functions:Term">
+                                      <left xsi:type="functions:Product" operation="DIV">
+                                        <left xsi:type="functions:Product">
+                                          <left xsi:type="functions:Power">
+                                            <base xsi:type="functions:InfluencingParameterValue">
+                                              <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.15"/>
+                                            </base>
+                                            <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                          </left>
+                                          <right xsi:type="functions:IntLiteral" value="250"/>
+                                        </left>
+                                        <right xsi:type="functions:IntLiteral" value="200"/>
+                                      </left>
+                                      <right xsi:type="functions:Term">
+                                        <left xsi:type="functions:Product" operation="DIV">
+                                          <left xsi:type="functions:Product">
+                                            <left xsi:type="functions:Power">
+                                              <base xsi:type="functions:InfluencingParameterValue">
+                                                <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.16"/>
+                                              </base>
+                                              <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                            </left>
+                                            <right xsi:type="functions:IntLiteral" value="250"/>
+                                          </left>
+                                          <right xsi:type="functions:IntLiteral" value="800"/>
+                                        </left>
+                                        <right xsi:type="functions:Term">
+                                          <left xsi:type="functions:Product" operation="DIV">
+                                            <left xsi:type="functions:Product">
+                                              <left xsi:type="functions:Power">
+                                                <base xsi:type="functions:InfluencingParameterValue">
+                                                  <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.17"/>
+                                                </base>
+                                                <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                              </left>
+                                              <right xsi:type="functions:IntLiteral" value="250"/>
+                                            </left>
+                                            <right xsi:type="functions:IntLiteral" value="9000"/>
+                                          </left>
+                                          <right xsi:type="functions:Term">
+                                            <left xsi:type="functions:Product" operation="DIV">
+                                              <left xsi:type="functions:Product">
+                                                <left xsi:type="functions:Power">
+                                                  <base xsi:type="functions:InfluencingParameterValue">
+                                                    <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.18"/>
+                                                  </base>
+                                                  <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                                </left>
+                                                <right xsi:type="functions:IntLiteral" value="250"/>
+                                              </left>
+                                              <right xsi:type="functions:IntLiteral" value="200"/>
+                                            </left>
+                                            <right xsi:type="functions:Term">
+                                              <left xsi:type="functions:Product" operation="DIV">
+                                                <left xsi:type="functions:Product">
+                                                  <left xsi:type="functions:Power">
+                                                    <base xsi:type="functions:InfluencingParameterValue">
+                                                      <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.19"/>
+                                                    </base>
+                                                    <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                                  </left>
+                                                  <right xsi:type="functions:IntLiteral" value="250"/>
+                                                </left>
+                                                <right xsi:type="functions:IntLiteral" value="800"/>
+                                              </left>
+                                              <right xsi:type="functions:Product" operation="DIV">
+                                                <left xsi:type="functions:Product">
+                                                  <left xsi:type="functions:Power">
+                                                    <base xsi:type="functions:InfluencingParameterValue">
+                                                      <relationshipVariable href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.20"/>
+                                                    </base>
+                                                    <exponent xsi:type="functions:IntLiteral" value="2"/>
+                                                  </left>
+                                                  <right xsi:type="functions:IntLiteral" value="250"/>
+                                                </left>
+                                                <right xsi:type="functions:IntLiteral" value="9000"/>
+                                              </right>
+                                            </right>
+                                          </right>
+                                        </right>
+                                      </right>
+                                    </right>
+                                  </right>
+                                </right>
+                              </right>
+                            </right>
+                          </right>
+                        </right>
+                      </right>
+                    </right>
+                  </right>
+                </right>
+              </right>
+            </right>
+          </right>
+        </right>
+      </expression>
+    </explicitDescription>
+    <dependent href="videostore.repository#_pIESoIBUEeeB54TBT5-nRQ"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.0"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.1"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.2"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.3"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.4"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.5"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.6"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.7"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.8"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.9"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.10"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.11"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.15"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.16"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.17"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.18"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.19"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.20"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.12"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.13"/>
+    <independent href="videostore.repository#//@components.0/@fineGrainedBehavior.0/@callParameter.14"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <independentComponentInstanceReferences assemblies="_5QiUIEeoEeSW4Op0B0CyhQ"/>
+    <dependentComponentInstanceReference assemblies="_o4xc8IBVEeeB54TBT5-nRQ"/>
+  </relationships>
+</system:System>

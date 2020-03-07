@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://www.descartes.tools/metamodel/repository/1.0" xmlns:system="http://www.descartes.tools/metamodel/system/1.0" id="_zdRVAEeoEeSW4Op0B0CyhQ" name="MySys">
+  <assemblyContexts id="_5QiUIEeoEeSW4Op0B0CyhQ" name="Transcription">
+    <encapsulatedComponent xsi:type="repository:BasicComponent" href="videostore.repository#_ePxeNEicEeOUHduTkzq26A"/>
+  </assemblyContexts>
+  <assemblyContexts id="_o4xc8IBVEeeB54TBT5-nRQ" name="Translation">
+    <encapsulatedComponent xsi:type="repository:BasicComponent" href="videostore.repository#_Cxy7VIBUEeeB54TBT5-nRQ"/>
+  </assemblyContexts>
+  <assemblyConnectors id="_tQ4ssYBVEeeB54TBT5-nRQ" name="Transcription --> Translation" providingAssemblyContext="_o4xc8IBVEeeB54TBT5-nRQ" requiringAssemblyContext="_5QiUIEeoEeSW4Op0B0CyhQ">
+    <interfaceRequiringRole href="videostore.repository#_LmuUoYBUEeeB54TBT5-nRQ"/>
+    <interfaceProvidingRole href="videostore.repository#_GdUK0IBUEeeB54TBT5-nRQ"/>
+  </assemblyConnectors>
+  <providingDelegationConnectors id="_6lWyAEeoEeSW4Op0B0CyhQ" name="PDCn_provRole_ProvRole_IA" assemblyContext="_5QiUIEeoEeSW4Op0B0CyhQ" outerInterfaceProvidingRole="_zdRVAUeoEeSW4Op0B0CyhQ">
+    <innerInterfaceProvidingRole href="videostore.repository#_fMTX4EicEeOUHduTkzq26A"/>
+  </providingDelegationConnectors>
+  <interfaceProvidingRoles id="_zdRVAUeoEeSW4Op0B0CyhQ" name="ProvRole_IA">
+    <interface href="videostore.repository#_Tq2AUUhvEeOHzfCev3b1wQ"/>
+  </interfaceProvidingRoles>
+</system:System>

@@ -1,0 +1,6 @@
+SELECT do.avgResponseTime, CPU_processingCPU.utilization
+FOR	SERVICE	'_yiFNMEeqEeSW4Op0B0CyhQ'	AS	do,
+	SERVICE	'_A_DeMEmxEeOPLK3yYyEQWQ'	AS	SysCall_boof,
+	SERVICE	'_USys4IBUEeeB54TBT5-nRQ'	AS	getSubtitle,
+	RESOURCE	'_I3tj4EnuEeOWVc_o6w1CBw'	AS	CPU_processingCPU
+USING dml@'properties/usecase1_filesize_automated.properties';

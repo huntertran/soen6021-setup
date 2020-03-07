@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<usageprofile:UsageProfile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:functions="http://www.descartes.tools/metamodel/functions/1.0" xmlns:usageprofile="http://www.descartes.tools/metamodel/usageprofile/1.0" id="_yiEmIEeqEeSW4Op0B0CyhQ" name="usgProfile">
+  <imports importURI="videostore.system"/>
+  <imports importURI="videostore.repository"/>
+  <system href="videostore.system#_zdRVAEeoEeSW4Op0B0CyhQ"/>
+  <usageScenarios id="_yiFNMEeqEeSW4Op0B0CyhQ" name="do">
+    <scenarioBehavior>
+      <actions xsi:type="usageprofile:SystemCallUserAction" id="_A_DeMEmxEeOPLK3yYyEQWQ" name="SysCall_boof">
+        <providingRole href="videostore.system#_zdRVAUeoEeSW4Op0B0CyhQ"/>
+        <signature href="videostore.repository#_aeA_cEh-EeOdTtmYhYAY2w"/>
+      </actions>
+    </scenarioBehavior>
+    <workloadType xsi:type="usageprofile:OpenWorkloadType">
+      <interArrivalTime>
+        <probFunction xsi:type="functions:ExponentialDistribution" rate="0.005"/>
+      </interArrivalTime>
+    </workloadType>
+  </usageScenarios>
+</usageprofile:UsageProfile>

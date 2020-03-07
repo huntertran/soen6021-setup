@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resourcelandscape:DistributedDataCenter xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:resourceconfiguration="http://www.descartes.tools/metamodel/resourceconfiguration/1.0" xmlns:resourcelandscape="http://www.descartes.tools/metamodel/resourcelandscape/0.1" id="_FE29UEnuEeOWVc_o6w1CBw" name="ddc">
+  <consistsOf id="_FnQfwEnuEeOWVc_o6w1CBw" name="dc">
+    <computeNodes id="_EuLk4ObvEeWHMYaSILpfIw" name="CPU">
+      <configSpec xsi:type="resourceconfiguration:ProcessingResourceSpecification" id="_I3tj4EnuEeOWVc_o6w1CBw" name="processingCPU" schedulingPolicy="FCFS" processingRate="1.0">
+        <processingResourceType href="pathmap://DML_APPLICATIONLEVEL_MODELS/defaultresourcetypes.resourcetype#_3ql5IJB4EeKmfoqNH_-HEA"/>
+        <nrOfParProcUnits id="_PUJdkAJEEeaYI8Ji-SVFxg" name="multiplicity" number="1"/>
+      </configSpec>
+    </computeNodes>
+  </consistsOf>
+</resourcelandscape:DistributedDataCenter>
