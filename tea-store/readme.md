@@ -1,5 +1,5 @@
 to run
 
 ```s
-docker-compose -f .\docker-compose_kieker.yaml up -d
+docker-compose -f .\tea-store\docker-compose_kieker.yaml up -d
 ```
